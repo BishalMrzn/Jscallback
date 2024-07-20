@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    const cb = (a, b) => {
+      return a + b;
+    };
+    const cbb = (a, b) => {
+      return b - a;
+    };
+    const triy = (x, y, cb) => {
+      return cb(x, y);
+    };
+    console.log(triy(1, 2, cbb));
+  </script>
+</html>

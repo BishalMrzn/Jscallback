@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>appendChild Example</title>
+  </head>
+  <body>
+    <div id="parent">
+      <p>Existing child</p>
+    </div>
+    <button id="btn">Add Child</button>
+
+    <script>
+      document.getElementById("btn").onclick = function () {
+        // Create a new element
+        var newChild = document.createElement("p");
+        newChild.textContent = "New child";
+
+        // Append the new element to the parent
+        document.getElementById("parent").appendChild(newChild);
+      };
+    </script>
+  </body>
+</html>
